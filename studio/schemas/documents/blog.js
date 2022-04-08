@@ -31,6 +31,16 @@ export default {
       name: 'coverImage',
       type: 'customImage',
     },
+    {
+      title: 'Excerpt',
+      name: 'excerpt',
+      type: 'excerptText',
+    },
+    {
+      title: 'Blog Body',
+      name: 'boyd',
+      type: 'bodyText',
+    },
   ],
   preview: {
     select: {
