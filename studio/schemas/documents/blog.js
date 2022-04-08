@@ -1,5 +1,6 @@
 import { format } from 'date-fns';
 import { GiNotebook } from 'react-icons/gi';
+import category from './category';
 
 export default {
   title: 'Blog Post',
@@ -25,6 +26,23 @@ export default {
       title: 'Published At',
       name: 'publishedAt',
       type: 'datetime',
+    },
+    {
+      title: 'Categories',
+      name: 'categories',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'category' }],
+        },
+      ],
+    },
+    {
+      title: 'Author',
+      name: 'author',
+      type: 'reference',
+      to: [{ type: 'author' }],
     },
     {
       title: 'Cover Image',
