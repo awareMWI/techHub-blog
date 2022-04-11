@@ -1,6 +1,5 @@
 import { format } from 'date-fns';
 import { GiNotebook } from 'react-icons/gi';
-import category from './category';
 
 export default {
   title: 'Blog Post',
@@ -52,12 +51,13 @@ export default {
     {
       title: 'Excerpt',
       name: 'excerpt',
-      type: 'excerptText',
+      type: 'normalText',
+      description: 'A short description of the blog post',
     },
     {
       title: 'Blog Body',
       name: 'boyd',
-      type: 'bodyText',
+      type: 'richText',
     },
   ],
   preview: {
